@@ -1,0 +1,12 @@
+.loader_wrapper{
+  -webkit-animation: rotate 1s infinite linear;
+          animation: rotate 1s infinite linear;
+  border: 10px solid #FF6060;
+  border-bottom-color: transparent;
+  border-radius: 100px;
+  height: 50px;
+  width: 50px;
+  margin : 0 auto 30%;
+  text-align: center;
+  
+}

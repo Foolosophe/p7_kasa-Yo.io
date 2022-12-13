@@ -1,0 +1,90 @@
+/********** Desktop ************/
+.header_container{
+    justify-content: space-between;
+    display:flex;
+    flex-direction: row;
+    padding: 40px 6%;
+}
+.logo{
+    height: 70px;
+}
+ /*Navbar*/
+.navbar{
+text-align: right;
+  display:flex;
+  justify-content: flex-end;
+  gap: 50px;
+  align-items: center;
+  text-decoration: none;
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
+}
+.navli{
+    color: #FF6060;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 142.6%;
+}
+.navli :active {
+    -webkit-text-decoration-line: underline;
+    text-decoration-line: underline;
+    color: #FF6060;
+}
+.nav{
+    color:#FF6060;
+    text-decoration: none;
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
+}
+
+/********** Tablette **********/
+@media (max-width: 992px){
+.header_container{
+    margin: 20px 20px;
+    width: 85%;
+    padding: 20px;
+    }
+.logo{
+    height: 45px;
+    width: 145px;
+}
+
+/*Navbar*/
+.navbar{
+    gap: 15px;
+    display: flex;
+    flex-direction: row;
+}
+.navli {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 142.6%;   
+    text-transform: uppercase;
+}
+}
+  
+/************* Mobile *******************/
+@media (max-width: 768px){
+.header_container{
+    padding : 10px;
+	align-items: center;
+    display: flex;
+    margin : 15px 15px;
+    width: 83%;
+}
+.navbar{
+    width: 70%;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 70%;
+    height: 70%;
+}
+.navli {
+    font-size: 12px;
+} 
+}

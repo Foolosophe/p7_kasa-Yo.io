@@ -1,0 +1,92 @@
+/********** Desktop ************/
+.collapse_div{
+    flex-direction: column;
+    display: flex;
+}
+.collapse_btn{
+    background-color: #FF6060;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 0;
+    justify-content: space-between;
+    font-size: 19px;
+}
+.collapse_title{
+    text-align: left;
+    color: white;
+    display: flex;
+    align-items:flex-start;
+    padding-left: 18px;
+    line-height: 26px;
+}
+.collapse_content{
+    background-color: #F7F7F7;
+    border-radius: 10px;
+    width : inherit;
+    overflow: auto;
+    display: flex;
+    height: auto;
+    
+}
+.collapse_text{
+    color:#FF6060;
+    display: flex;
+    padding: 20px;}
+    
+.collapse_text ul {
+    margin: 0;
+    padding: 0;
+}
+.collapse_text li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+/* Chevron*/
+.open {
+    padding-right: 18px;
+    
+}
+.close{
+    transform: rotate(180deg);
+    padding-left: 18px;
+}
+
+/********** Tablette **********/
+@media (max-width: 992px){
+
+.open {
+    height: 30%;
+}
+.close{
+    height: 30%;
+}
+    
+}
+
+
+/************* Mobile *******************/
+@media (max-width: 768px){
+.collapse_btn{
+    height: 30px;
+}
+
+.collapse_title{
+    font-size: 13px;
+    padding-left: 11px;
+ }
+.collapse_text{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    padding-left: 11px;
+    padding-right: 11px;
+    padding-top: 15px;
+    }
+}

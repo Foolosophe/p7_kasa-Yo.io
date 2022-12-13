@@ -1,0 +1,81 @@
+/********** Desktop ************/
+.carousel {
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.carousel_container {
+    display: flex;
+    transition: transform .5s ease;
+    width: 100%;
+    height: 415px;
+    border-radius: 25px;
+}
+
+.carousel_img {
+    width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
+}
+
+.carousel_controls{
+    display: flex;
+    align-items: center;
+}
+
+.chevronLeft {
+    width: 30px ;
+    height: auto;
+    left: 24px ;
+    position: absolute;
+    cursor: pointer;
+}
+
+.chevronRight {
+    width: 30px ;
+    height: auto;
+    right: 24px ;
+    position: absolute;
+    cursor: pointer;
+}
+.carousel_Index{
+    position: absolute;
+    left: 49%;
+    font-size: 18px;
+    bottom: 24px;
+    color: white;
+}
+
+/********** Tablette **********/
+@media (max-width: 992px){
+.chevronLeft {
+    width: 3%;
+    left: 6px;
+}
+.chevronRight {
+    width: 3%;
+    right: 6px;
+}
+.carousel_Index{
+    font-size: 12px;
+    bottom: 6px;
+}    
+}
+  
+/************* Mobile *******************/
+@media (max-width: 768px){
+.carousel{
+    margin-bottom: 15px;
+}
+.carousel_container{
+    height: 255px;
+    border-radius: 10px;
+}
+.carousel_img{
+    border-radius: 10px;
+}
+}
+
+    
+
